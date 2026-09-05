@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toán THCS & Bồi dưỡng MTCT - Thầy Khải</title>
+  
+  <!-- Tích hợp Tailwind CSS để làm đẹp tự động -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tích hợp FontAwesome cho các biểu tượng Toán học -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    /* Hiệu ứng mượt mà khi rê chuột */
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- PHẦN BANNER CHÍNH (HERO SECTION) -->
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white pb-24 pt-16 px-4 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-4 uppercase tracking-wide">Hệ thống học tập Toán THCS</h1>
+    <p class="text-lg md:text-xl text-blue-100 mb-2 font-medium">Giáo viên: Lê Tuấn Khải - Trường THCS Quản Cơ Thành</p>
+    <p class="text-sm md:text-base text-blue-200">Luyện thi vào lớp 10 & Bồi dưỡng học sinh giỏi MTCT</p>
+  </header>
+
+  <!-- KHU VỰC CÁC THẺ KHỐI LỚP (GRID CARDS) -->
+  <main class="max-w-6xl mx-auto px-4 -mt-16 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Thẻ Toán 6 -->
+      <a href="./k6/" class="card-hover bg-white rounded-xl overflow-hidden shadow border-t-4 border-green-500 block">
+        <div class="p-6 flex items-center">
+          <div class="w-14 h-14 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-2xl mr-4">
+            <i class="fa-solid fa-shapes"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">Toán 6</h2>
+            <p class="text-gray-500 text-sm mt-1">Số học & Hình học trực quan</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-6 py-3 text-sm text-green-600 font-medium text-right hover:bg-green-50">
+          Vào lớp học <i class="fa-solid fa-arrow-right ml-1"></i>
+        </div>
+      </a>
+
+      <!-- Thẻ Toán 7 -->
+      <a href="./k7/" class="card-hover bg-white rounded-xl overflow-hidden shadow border-t-4 border-cyan-500 block">
+        <div class="p-6 flex items-center">
+          <div class="w-14 h-14 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center text-2xl mr-4">
+            <i class="fa-solid fa-divide"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">Toán 7</h2>
+            <p class="text-gray-500 text-sm mt-1">Số hữu tỉ & Hình học suy luận</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-6 py-3 text-sm text-cyan-600 font-medium text-right hover:bg-cyan-50">
+          Vào lớp học <i class="fa-solid fa-arrow-right ml-1"></i>
+        </div>
+      </a>
+
+      <!-- Thẻ Toán 8 -->
+      <a href="./k8/" class="card-hover bg-white rounded-xl overflow-hidden shadow border-t-4 border-purple-500 block">
+        <div class="p-6 flex items-center">
+          <div class="w-14 h-14 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mr-4">
+            <i class="fa-solid fa-square-root-variable"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">Toán 8</h2>
+            <p class="text-gray-500 text-sm mt-1">Đại số nâng cao & Hình tứ giác</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-6 py-3 text-sm text-purple-600 font-medium text-right hover:bg-purple-50">
+          Vào lớp học <i class="fa-solid fa-arrow-right ml-1"></i>
+        </div>
+      </a>
+
+      <!-- Thẻ Toán 9 (Nhấn mạnh ôn thi) -->
+      <a href="./k9/" class="card-hover bg-white rounded-xl overflow-hidden shadow border-t-4 border-red-500 block">
+        <div class="p-6 flex items-center">
+          <div class="w-14 h-14 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-2xl mr-4">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">Toán 9</h2>
+            <p class="text-gray-500 text-sm mt-1">Ôn thi vào lớp 10, Hàm số & Đường tròn</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-6 py-3 text-sm text-red-600 font-medium text-right hover:bg-red-50">
+          Vào lớp học <i class="fa-solid fa-arrow-right ml-1"></i>
+        </div>
+      </a>
+
+      <!-- Thẻ CLB MTCT (Nổi bật công nghệ) -->
+      <a href="./clbmtct/" class="card-hover bg-white rounded-xl overflow-hidden shadow border-t-4 border-slate-800 block md:col-span-2 lg:col-span-1">
+        <div class="p-6 flex items-center">
+          <div class="w-14 h-14 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center text-2xl mr-4">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-bold text-gray-800">CLB MTCT Casio</h2>
+            <p class="text-gray-500 text-sm mt-1">Luyện giải thuật toán & Thi HSG</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 px-6 py-3 text-sm text-slate-800 font-medium text-right hover:bg-slate-100">
+          Vào câu lạc bộ <i class="fa-solid fa-arrow-right ml-1"></i>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-16 pb-8 text-center text-gray-400 text-sm">
+    <p>© 2026 Bản quyền thuộc về Thầy Khải.</p>
+    <p>Thiết kế dành riêng cho học sinh đam mê Toán học.</p>
+  </footer>
+
+</body>
+</html>
